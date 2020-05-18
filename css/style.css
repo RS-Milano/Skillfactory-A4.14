@@ -1,0 +1,698 @@
+/* Подключение серверных шрифтов */
+@font-face {
+    font-family: "Open Sans normal";
+    src: url("../fonts/OpenSans-Regular.ttf")  format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans bold";
+    src: url("../fonts/OpenSans-Bold.ttf")  format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans Extrabold";
+    src: url("../fonts/OpenSans-ExtraBold.ttf")  format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans Semibold";
+    src: url("../fonts/OpenSans-SemiBold.ttf")  format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans Italic";
+    src: url("../fonts/OpenSans-Italic.ttf")  format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+body {
+    margin: 0;
+}
+/* Форматирование шапки */
+header {
+    background-color: #F6F2F2;
+    display: flex;
+    flex-direction: column;
+}
+.navigation-line {
+    height: 89px;
+    max-width: 1249px;
+    width: 100%;
+    margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation-line ul {
+    padding: 0;
+}
+header li {
+    list-style: none;
+    display: inline;
+}
+header li a {
+    text-decoration: none;
+    color: #E0E0E0;
+    padding: 35px 25px;
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+header li a:hover {
+    background: #FF3F40;
+}
+/* Форматирование первого структурного раздела */
+.first-line {
+    max-width: 1249px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 103px;
+    padding-bottom: 111px;
+    display: flex;
+    justify-content: space-between;
+}
+.l1-section1 {
+    max-width: 50%;
+    min-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.l1-section1 > h1 {
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-family: "Open Sans Extrabold", Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 72px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.l1-section1 > p {
+    max-width: 550px;
+    margin-bottom: 63px;
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+}
+.l1-section1 a {
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    background: #FF2D2D;
+    text-decoration: none;
+    border-radius: 12px;
+    display: block;
+    width: 230px;
+    text-align: center;
+    padding: 15.5px 0;
+}
+.l1-section2 {
+    max-width: 50%;
+    min-width: 550px;
+    display: flex;
+}
+/* Форматирование второго структурного раздела */
+.second-line {
+    max-width: 1249px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 107px;
+    display: flex;
+    justify-content: space-between;
+}
+.l2-section1 {
+    max-width: 48%;
+}
+.l2-section1 h1 {
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    line-height: 55px;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.l2-section1 p {
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 540px;
+    color: #000000;
+    margin-bottom: 64px;
+}
+.l2-section1 a {
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.32px;
+    color: #FF2D2D;
+    text-decoration: none;
+    display: block;
+    width: 226px;
+    border: solid #FF2D2D 2px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 13.5px 0;
+}
+.l2-section2 {
+    max-width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.l2-s2-block {
+    max-width: 48%;
+    padding-bottom: 52px;
+}
+.l2-s2-block h1 {
+    margin-top: 32px;
+    margin-bottom: 13px;
+    font-family: "Open Sans Semibold", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.3px;
+    color: #000000;
+}
+.l2-s2-block p {
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+}
+/* Форматирование третьего структурного раздела */
+.line-one {
+    width: 1251px;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ECECEC;
+    padding: 0;
+    border: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.third-line-h1 {
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 104px;
+    margin-bottom: 29px;
+}
+.third-line-p {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+.line-two {
+    margin-left: auto;
+    margin-right: auto;
+    width: 134px;
+    height: 5px;
+    background: #FF2D2D;
+    padding: 0;
+    border: 0;
+    margin-top: 33px;
+    margin-bottom: 86px;
+}
+/* Форматирование четвертого структурного раздела */
+.navigation-line-two {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 58px;
+}
+.navigation-line-two ul {
+    margin: 0;
+    padding: 0;
+}
+.navigation-line-two li {
+    list-style: none;
+    display: inline;
+}
+.navigation-line-two li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0 25px;
+    font-family: "Open Sans Semibold", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+.navigation-line-two li a:hover {
+    color: #FF3F40;
+}
+/* Форматирование пятого структурного раздела */
+.fifth-line {
+    display: flex;
+    max-width: 1249px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.l5-block {
+    width: 24%;
+    height: 293px;
+    margin-bottom: 20px;
+    background-color: #5281FF;
+}
+/* Форматирование шестого структурного раздела */
+.sixth-line {
+    max-width: 1249px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.sixth-line h1 {
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 130px;
+    margin-bottom: 35px;
+}
+.sixth-line p {
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    max-width: 480px;
+    margin-bottom: 37px;
+}
+.sixth-line hr {
+    width: 134px;
+    height: 5px;
+    background: #FF2D2D;
+    padding: 0;
+    border: 0;
+    margin-left: 0;
+    margin-bottom: 80px;
+}
+/* Форматирование седьмого структурного раздела */
+.seventh-line {
+    max-width: 1249px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.l7-first-block {
+    min-width: 22%;
+    height: 484px;
+    background-color: #FF3F40;
+    margin-right: 20px;
+}
+.l7-second-block {
+    min-width: 72%;
+    display: flex;
+    flex-direction: column;
+}
+.l7-second-block h1 {
+    font-family: "Open Sans Semibold", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 0;
+}
+.l7-second-block p{
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    max-width: 660px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 46px;
+}
+.l7-second-block ul {
+    padding: 0;
+    margin-bottom: 50px;
+}
+.l7-second-block li {
+    list-style: none;
+    display: inline;
+    padding-right: 25px;
+}
+.l7-second-block li a {
+    font-family: "Open Sans Italic", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+    color: #000000;
+    text-decoration: none;
+}
+.l7-second-block li a:hover {
+    text-decoration: underline;
+}
+.l7-b2-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.l7-b2-div-block {
+    width: 206px;
+    height: 200px;
+    background-color: #FF3F40;
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+.hand {
+    width: 100%;
+    height: 37px;
+    position: absolute;
+    bottom: 0;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    visibility: hidden;
+}
+.l7-b2-div-block:hover > .hand {
+    visibility: visible;
+}
+.hand p {
+    font-family: "Open Sans Semibold", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+    padding-top: 5px;
+}
+/* Форматирование восьмого структурного раздела */
+.eighth-line {
+    background: #2C2C2C;
+    display: flex;
+    flex-direction: column;   
+}
+.eighth-line h1 {
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    margin-top: 125px;
+    margin-bottom: 15px;
+
+}
+.eighth-line p {
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 56px;
+}
+.eighth-line form {
+    align-self: center;
+    margin-bottom: 100px;
+}
+.eighth-line input {
+    width: 524px;
+    height: 82px;
+    border-radius: 5px;
+    margin-right: 19px;
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #2C2C2C;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+.eighth-line button {
+    width: 217px;
+    height: 82px;
+    background-color: #FF3F40;;
+    border: 0;
+    border-radius: 5px;
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/* Форматирование девятого структурного раздела */
+.ninth-line {
+    max-width: 1249px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ninth-line h1 {
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 130px;
+    margin-bottom: 45px;
+}
+.ninth-line p {
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    max-width: 750px;
+    margin-bottom: 58px;
+}
+.ninth-line hr {
+    width: 134px;
+    height: 5px;
+    background: #FF2D2D;
+    padding: 0;
+    border: 0;
+    margin-left: 0;
+    margin-bottom: 80px;
+}
+/* Форматирование десятого структурного раздела */
+.tenth-line {
+    max-width: 1249px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.l10-block1 {
+    width: 60%;
+}
+.tenth-line form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.form-name {
+    width: 40%;
+    height: 71px;
+    margin-bottom: 43px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+}
+.form-email {
+    width: 40%;
+    height: 71px;
+    margin-bottom: 43px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+}
+.form-text {
+    width: 100%;
+    height: 252px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+    padding-top: 32px;
+    resize: none;
+    padding-right: 20px;
+}
+.tenth-line input, textarea {
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(0, 0, 0);
+    padding-left: 50px;
+}
+.form-button {
+    width: 100%;
+    height: 75px;
+    background-color: #FF3F40;;
+    border: 0;
+    border-radius: 5px;
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 43px;
+    margin-bottom: 20px;
+}
+.l10-block2 {
+    width: 33%;
+    height: 485px;
+    background: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.l10-block2 h1 {
+    font-family: "Open Sans bold", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 15px 30px;
+}
+.l10-b2-element {
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 15px 30px;
+}
+/* Форматирование footer */
+footer {
+    background-color: #313030;
+    height: 113px;
+    margin-top: 107px;
+}
+footer div {
+    max-width: 1249px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 113px;
+}
+footer p {
+    font-family: "Open Sans normal", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #B8B8B8;
+}
+footer ul {
+    min-width: 150px;
+    margin-right: 164px;
+    display: inline-flex;
+    margin-right: 0;
+}
+footer li {
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+    display: inline;
+    margin-right: 18px;
+}
+/* Декоративный элемент закрашивающий правое поле */
+.contacts-background {
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+	height: 485px;
+	background-color: #2D2D2D;
+	clip-path: polygon(1000px 0, 100% 0, 100% 100%, 1000px 100%);
+}
+/* Изменение правил при уменьшении ширины экрана */
+@media screen and (max-width: 1280px) {
+    .l5-block {
+        width: 32%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .tenth-line {
+        flex-wrap: wrap;
+    }
+    .l10-block1 {
+        min-width: 95%;
+    }
+    .l10-block2 {
+        min-width: 95%;
+    }
+    .contacts-background {
+        display: none;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .first-line {
+        flex-wrap: wrap;
+    }
+    .l1-section1 {
+        margin-bottom: 50px;
+    }
+    .l2-s2-block {
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 830px) {
+    .eighth-line input {
+        width: 330px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .second-line {
+        flex-wrap: wrap;
+    }
+    .l2-section1 {
+        max-width: 90%;
+        margin-bottom: 50px;
+    }
+    .l2-section2 {
+        max-width: 90%;
+    }
+    .l5-block {
+        width: 49%;
+    }
+    .seventh-line {
+        flex-wrap: wrap;
+    }
+    .l7-first-block {
+        width: 321px;
+    }
+    footer div {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 450px) {
+    .l5-block {
+        width: 100%;
+    }
+}
